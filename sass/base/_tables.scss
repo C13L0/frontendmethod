@@ -1,0 +1,38 @@
+// http://monosnap.com/image/SzfggeNJyjgB5FtstGFNRLBIF97P9r.png
+
+// Tables
+table {
+border-spacing: 0;
+font-size: 0.857em;
+}
+
+th {
+  color: white;
+  font-weight: bold;
+  padding: 0.50em 1em;
+  background: lightslategrey;
+}
+
+td {
+  color: grey;
+  padding: 4px 9px;
+  border: 1px solid white;
+  text-align: left;
+}
+
+// Table rows
+tr {
+  &.odd {
+    background: aliceblue;
+  }
+  &.even {
+    background: white;
+  }
+}
+
+// Table caption
+caption {
+  color: lightslategrey;
+  font-size: 18px;
+  text-transform: uppercase;
+}
