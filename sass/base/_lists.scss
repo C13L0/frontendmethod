@@ -1,1 +1,50 @@
-_lists.scss
+// Compass mixins for links
+// @include hover-link - Underline a link on hover only.
+// @include unstyled-link - Make a link appear like regular text.
+// @include link-colors($normal, $hover, $active, $visited, $focus)
+
+// a {
+//   @include link-colors(pink, purple, green, pink, green);
+//   @include hover-link;
+// }
+
+a {
+  color: pink;
+  text-decoration: none;
+  &:visited {
+    color: pink;
+  }
+  &:hover {
+    color: purple;
+  }
+  &.active {
+    color: green;
+  }
+}
+
+
+// Compass mixins for bullets
+// @include no-bullet - turn off for one element of a list
+// @include no-bullets - turn off for an entire list
+// @include pretty-bullets($bullet-icon, $width, $height, $line-height, $padding) - use an image
+
+
+ul {
+  @include no-bullets;
+  padding-left: 0;
+  background: #292929;
+  color: white;
+  li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #3c3c3c;
+    &:first-child {
+      border-top: none;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+ol {}
